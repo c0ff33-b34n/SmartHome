@@ -12,7 +12,7 @@ namespace SmartHome
         DataTemplate thermostatTemplate;
         public DeviceTemplateSelector()
         {
-            doorbellTemplate = new DataTemplate(typeof(TextCell));
+            doorbellTemplate = new DataTemplate(typeof(DoorBellViewCell));
             smokeTemplate = new DataTemplate(typeof(SmokeDetectorViewCell));
             thermostatTemplate = new DataTemplate(typeof(ThermostatViewCell));
         }
