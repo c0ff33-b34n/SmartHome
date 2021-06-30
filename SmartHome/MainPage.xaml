@@ -11,6 +11,10 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <ListView ItemsSource="{Binding .}" ItemTemplate="{StaticResource DeviceSelector}" HasUnevenRows="True" />
+    <ListView ItemsSource="{Binding .}"
+              ItemTemplate="{StaticResource DeviceSelector}"
+              HasUnevenRows="True"
+              IsGroupingEnabled="True"
+              GroupDisplayBinding="{Binding Key}" />
 
 </ContentPage>
